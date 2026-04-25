@@ -1,0 +1,137 @@
+{
+  "info": {
+    "_postman_id": "2c1d01a8-fbee-4d59-af0f-ab17e7eafcf7",
+    "name": "CredX",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "33945368"
+  },
+  "item": [
+    {
+      "name": "Create Organization",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Purnachand\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8081/orgs",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "orgs"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add Seat",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/orgs/3/seats?email=user1@test.com&type=STANDARD",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "orgs",
+            "3",
+            "seats"
+          ],
+          "query": [
+            {
+              "key": "email",
+              "value": "user1@test.com"
+            },
+            {
+              "key": "type",
+              "value": "STANDARD"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Seat Details",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/orgs/3/seats",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "orgs",
+            "3",
+            "seats"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Seat Count",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/orgs/3/seats/count",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "orgs",
+            "3",
+            "seats",
+            "count"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Checking Billing History",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/orgs/3/billing/history",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "orgs",
+            "3",
+            "billing",
+            "history"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
