@@ -77,16 +77,6 @@ Controller → Service → Repository
 
 ---
 
-## 🔮 Improvements (If more time)
-
-* Add Razorpay webhook for real payment verification
-* Retry mechanism for failed payments
-* Add authentication (JWT)
-* Add Swagger API documentation
-* Improve exception handling with custom responses
-
----
-
 ## 📦 APIs
 
 POST /orgs
